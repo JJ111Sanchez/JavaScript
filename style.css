@@ -1,130 +1,112 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffe6f2; /* Fondo rosado claro */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to bottom right, #ffdef0, #fff5ee);
     color: #333;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Estilo del encabezado */
+/* Encabezado */
 header {
-    background-color: #ff66b2; /* Rosa fuerte */
-    padding: 20px;
+    background: linear-gradient(to right, #ff66b2, #ff99cc);
+    padding: 30px;
     color: white;
+    border-bottom: 5px dashed #fff;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3em;
+    text-shadow: 2px 2px #ff3399;
 }
 
-/* Estilo de la navegación */
+/* Navegación */
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 15px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+    background-color: #ff66b2;
+    padding: 10px 20px;
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 1.2em;
+    transition: background 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffccdd;
+    background-color: #ffa3d3;
 }
 
 /* Secciones */
 section {
-    padding: 50px 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 60px 20px;
+    margin: 30px auto;
+    background: #fff0f6;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
 }
 
-/* Lista de productos */
-#productos ul {
-    list-style: none;
-    padding: 0;
-}
-
-#productos li {
-    background-color: white;
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-/* Estilos para los productos */
+/* Productos */
 #productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
+
 .producto {
-    background-color: white;
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    background-color: #fff;
+    border: 3px dotted #ff66b2;
+    border-radius: 25px;
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .producto:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(255, 102, 178, 0.3);
 }
 
 .producto img {
     width: 100%;
-    height: 150px;
-    border-radius: 10px;
+    height: 160px;
+    border-radius: 15px;
     object-fit: cover;
-}
-
-.producto h3 {
-    color: #ff66b2;
-    margin: 10px;
-}
-
-.producto p{
-    font-size: 0.9cm;
-    color: #333;
-}
-
-.producto img:hover {
-    transform: scale(1.1);
+    margin-bottom: 10px;
 }
 
 .producto p {
-    font-size: 0.9em;
-    color: #333;
+    font-size: 1.1em;
+    color: #ff3399;
+    font-weight: bold;
 }
 
-/* Pie de página */
+/* Contacto */
+#contacto p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Footer */
 footer {
-    background-color: #ff66b2;
+    background: linear-gradient(to right, #ff66b2, #ff99cc);
     color: white;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 20px;
+    font-size: 1em;
+    border-top: 5px dashed #fff;
 }
 
-/* Interactividad */
-section:hover {
-    transform: scale(1.02);
-    transition: 0.3s ease-in-out;
-}
